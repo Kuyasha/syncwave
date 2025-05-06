@@ -1,3 +1,3 @@
 # VERCEL LIVE PROJECT LINK
 
-syncwave-two.vercel.app
+"https://syncwave-two.vercel.app"

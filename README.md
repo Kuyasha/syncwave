@@ -1,14 +1,8 @@
-# VERCEL LIVE PROJECT LINK
-
-"https://syncwave-two.vercel.app"
-
-
-## Project Title:
 # SyncWave | A Realtime Chat Application
 
 
 ---
-Tech Stack :
+## Tech Stack :
 
 Frontend : React.js(Hooks+Context API), , JavaScript, HTML5, CSS3
 Backend/Services : Firebase (Firestore, Auth, Hosting), Firebase Security Rules
@@ -84,7 +78,7 @@ I also gained valuable practice in responsive design, authentication logic, and 
 
 Links:
 
-Live Demo: [your live app link here]
+Live Demo:  "https://syncwave-two.vercel.app"
 
 Source Code: [your GitHub repo link here]
 

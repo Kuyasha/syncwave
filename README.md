@@ -25,18 +25,15 @@ Firebase’s real-time database and hosting made it possible to manage dynamic c
 ---
 ## Key Features:
 
-Authentication : 
-Implemented user authentication(login and logout) using Firebase Auth. Ensures that only authenticated users can access chat functionality.
+- Authentication : 
+Implemented user authentication(login and logout) using Firebase Auth. Firebase takes care of secure token management and session persistence. I used React Context to store the authenticated user's data and protected routes using onAuthStateChanged to ensure only loggedIn users can access the chat interface.
 
 
-Real-Time Messaging:
-
-Messages are synced instantly across devices using Firestore’s real-time database.
-
-Display of chat timestamps and automatic scrolling to the newest message.
+- Real-Time Messaging:
+Messages are synced instantly across devices using Firestore’s real-time database. For instant update across users I have used Firestore's onSnapshot. Also messages are fetched in reverse order
 
 
-User Status and Presence:
+- User Status and Presence:
 
 Online/offline status detection using Firebase's Realtime Database or Firestore.
 

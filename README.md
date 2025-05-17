@@ -5,24 +5,25 @@
 ## Tech Stack :
 
 Frontend : React.js(Hooks+Context API), , JavaScript, HTML5, CSS3
+
 Backend/Services : Firebase (Firestore, Auth, Hosting), Firebase Security Rules
+
 Other Tools : Git, GitHub, VS Code, Vercel(for testing or alternate deployment)
 
 
 
 ---
-Description:
+## Description:
 
 I designed and developed a full-featured real-time chat application using React.js and Firebase, focused on seamless user experience, authentication, and efficient message handling. This project was built to demonstrate my skills in full-stack web development, particularly real-time communication, state management, and cloud-based backend integration.
 
-The app enables users to sign up and log in using Firebase Authentication (Google OAuth), send and receive real-time messages via Cloud Firestore, and view the online/offline status of other users. The application features a clean and responsive UI, optimized for both desktop and mobile users.
+The app enables users to sign up and log in using Firebase Authentication, send and receive real-time messages via Cloud Firestore, and view the online/offline status of other users. In the chat users can also send the images and store the chat images in Cloudinary storage. The application features a clean and responsive UI, optimized for both desktop and mobile users.
 
 Firebase’s real-time database and hosting made it possible to manage dynamic content with minimal latency. I used React Hooks and Context API for state management, and Firebase Security Rules to ensure secure access to user data and messages.
 
 
 ---
-
-Key Features:
+## Key Features:
 
 Authentication:
 

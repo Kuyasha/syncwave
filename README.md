@@ -29,11 +29,12 @@ Firebase’s real-time database and hosting made it possible to manage dynamic c
 Implemented user authentication(login and logout) using Firebase Auth. Firebase takes care of secure token management and session persistence. I used React Context to store the authenticated user's data and protected routes using onAuthStateChanged to ensure only loggedIn users can access the chat interface.
 
 
-- Real-Time Messaging:
-Messages are synced instantly across devices using Firestore’s real-time database. For instant update across users I have used Firestore's onSnapshot. Also messages are fetched in reverse order
+- Real-Time Messaging :
+Messages are synced instantly across devices using Firestore’s real-time database. For instant update across users I have used Firestore's onSnapshot. Also messages are fetched in reverse order so that the newest messages appear at the bottom.
 
 
-- User Status and Presence:
+- User Status and Presence :
+Implemented user presence using a lastSeen timestamp. I have updated the user's lastSeen field in Firestore using their authenticated(auth.chatUser) at every 60 secs. This way I can check if a user was active recently 
 
 Online/offline status detection using Firebase's Realtime Database or Firestore.
 

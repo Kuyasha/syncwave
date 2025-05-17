@@ -25,11 +25,8 @@ Firebase’s real-time database and hosting made it possible to manage dynamic c
 ---
 ## Key Features:
 
-Authentication:
-
-Integrated Firebase Google OAuth login and logout system.
-
-Ensures that only authenticated users can access chat functionality.
+Authentication : 
+Implemented user authentication(login and logout) using Firebase Auth. Ensures that only authenticated users can access chat functionality.
 
 
 Real-Time Messaging:

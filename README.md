@@ -4,8 +4,7 @@
 
 
 Project Title:
-
-SyncWave | A Realtime Chat Application
+# SyncWave | A Realtime Chat Application
 
 
 ---
@@ -15,7 +14,7 @@ Frontend: React.js(Hooks+Context API), , JavaScript, HTML5, CSS3
 
 Backend/Services: Firebase (Firestore, Auth, Hosting), Firebase Security Rules
 
-Other Tools: Git, GitHub, VS Code, Netlify/Vercel (for testing or alternate deployment)
+Other Tools: Git, GitHub, VS Code, Vercel(for testing or alternate deployment)
 
 
 

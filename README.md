@@ -3,18 +3,16 @@
 "https://syncwave-two.vercel.app"
 
 
-Project Title:
+## Project Title:
 # SyncWave | A Realtime Chat Application
 
 
 ---
-Technologies Used:
+Tech Stack :
 
-Frontend: React.js(Hooks+Context API), , JavaScript, HTML5, CSS3
-
-Backend/Services: Firebase (Firestore, Auth, Hosting), Firebase Security Rules
-
-Other Tools: Git, GitHub, VS Code, Vercel(for testing or alternate deployment)
+Frontend : React.js(Hooks+Context API), , JavaScript, HTML5, CSS3
+Backend/Services : Firebase (Firestore, Auth, Hosting), Firebase Security Rules
+Other Tools : Git, GitHub, VS Code, Vercel(for testing or alternate deployment)
 
 
 

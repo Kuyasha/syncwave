@@ -28,6 +28,8 @@ The app enables users to sign up and log in using Firebase Authentication, send 
 Firebase’s real-time database and hosting made it possible to manage dynamic content with minimal latency. I used React Hooks and Context API for state management, and Firebase Security Rules to ensure secure access to user data and messages.
 
 
+
+
 ---
 ## Key Features:
 
@@ -40,40 +42,53 @@ Messages are synced instantly across devices using Firestore’s real-time datab
 
 
 - User Status and Presence :
-Implemented user presence using a lastSeen timestamp. I have updated the user's lastSeen field in Firestore using their authenticated(auth.chatUser) at every 60 secs. This way I can check if a user was active recently 
-
-Online/offline status detection using Firebase's Realtime Database or Firestore.
-
-Optional typing indicators for active chats.
+Implemented user presence using a lastSeen timestamp. I have updated the user's lastSeen field in Firestore using their authenticated(auth.chatUser) at every 60 secs. This way I can check if a user was active recently(within last 70secs) to determine if the user is online. If the user's lastSeen is older than that , I consider the user is offline.This approach works well for basic presence tracking without needing firebase realtime database.
 
 
-Responsive UI/UX:
-
+- Responsive UI/UX:
 Built using CSS Flexbox/Grid and media queries to support all screen sizes.
+user avatars, and timestamps for better usability.
 
-Chat bubbles, user avatars, and timestamps for better usability.
 
-
-Security & Performance:
-
+- Security & Performance:
 Firestore security rules implemented to restrict unauthorized access.
-
 Minimal re-renders and optimized Firebase queries for improved performance.
 
 
-Hosting:
-
+- Hosting:
 Deployed on Firebase Hosting or Vercel with fast load times and free SSL.
 
 
 
----
 
-Project Outcome & Learning:
+---
+## Project Outcome & Learning:
 
 This project helped me deepen my understanding of real-time data flow, component-based UI development in React, and backend-as-a-service (BaaS) solutions. It gave me hands-on experience in building scalable, secure, and modern web applications without needing to set up a traditional backend server.
 
 I also gained valuable practice in responsive design, authentication logic, and cloud deployment—skills that are directly applicable to real-world full-stack web development roles.
+
+
+
+
+## Screenshots
+
+1)Viewing from Desktop
+
+![App Screenshots](screenshots/)
+
+
+2)Viewing from Mobile device
+
+![App Screenshots](screenshots/)
+
+
+## License
+This project is open-source and available under the MIT License.
+
+---
+  
+
 
 
 

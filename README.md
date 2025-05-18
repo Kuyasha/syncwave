@@ -75,22 +75,22 @@ I also gained valuable practice in responsive design, authentication logic, and 
 
 1)Sign Up Page
 
-![App Screenshots](screenshots/Sign Up Page.png)
+![App Screenshots](screenshots/signup.png)
 
 
 2)Login Page
 
-![App Screenshots](screenshots/Login Page.png)
+![App Screenshots](screenshots/login.png)
 
 
 3)Chat Page1
 
-![App Screenshots](screenshots/Login Page.png)
+![App Screenshots](screenshots/chat_1.png)
 
 
 4)Chat Page2
 
-![App Screenshots](screenshots/Login Page.png)
+![App Screenshots](screenshots/chat2.png)
 
 
 4)Profile Update Page

@@ -61,16 +61,6 @@ Deployed on Firebase Hosting or Vercel with fast load times and free SSL.
 
 
 
----
-## Project Outcome & Learning:
-
-This project helped me deepen my understanding of real-time data flow, component-based UI development in React, and backend-as-a-service (BaaS) solutions. It gave me hands-on experience in building scalable, secure, and modern web applications without needing to set up a traditional backend server.
-
-I also gained valuable practice in responsive design, authentication logic, and cloud deployment—skills that are directly applicable to real-world full-stack web development roles.
-
-
-
-
 ## Screenshots
 
 1)Sign Up Page
@@ -98,6 +88,18 @@ I also gained valuable practice in responsive design, authentication logic, and 
 ![App Screenshots](screenshots/profile_update_page.png)
 
 
+
+
+---
+## Project Outcome & Learning:
+
+This project helped me deepen my understanding of real-time data flow, component-based UI development in React, and backend-as-a-service (BaaS) solutions. It gave me hands-on experience in building scalable, secure, and modern web applications without needing to set up a traditional backend server.
+
+I also gained valuable practice in responsive design, authentication logic, and cloud deployment—skills that are directly applicable to real-world full-stack web development roles.
+
+
+
+---
 ## License
 This project is open-source and available under the MIT License.
 

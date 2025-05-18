@@ -40,9 +40,9 @@
 .chat-msg{
     height: calc(100% - 70px);
     padding-bottom: 50px;
-    overflow-y: scroll;
     display: flex;
     flex-direction: column-reverse;
+    overflow-y: scroll;
 }
 .s-msg div img, .r-msg div img{
     width: 27px;

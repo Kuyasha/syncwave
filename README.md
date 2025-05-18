@@ -1,5 +1,13 @@
 # SyncWave | A Realtime Chat Application
 
+Built a responsive real-time chat application with Firebase authentication, image sharing, and presence indicators. Implemented React Hooks and Context API for efficient state management and global user/session handling. Firebase Firestore enables real-time messaging using onSnapshot .
+
+
+---
+## Live Demo
+[Click here to view the live app](https://syncwave-two.vercel.app)  
+
+
 
 ---
 ## Tech Stack :
@@ -70,12 +78,6 @@ This project helped me deepen my understanding of real-time data flow, component
 I also gained valuable practice in responsive design, authentication logic, and cloud deployment—skills that are directly applicable to real-world full-stack web development roles.
 
 
----
 
-Links:
-
-Live Demo:  "https://syncwave-two.vercel.app"
-
-Source Code: [your GitHub repo link here]
 
 

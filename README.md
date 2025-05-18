@@ -73,14 +73,29 @@ I also gained valuable practice in responsive design, authentication logic, and 
 
 ## Screenshots
 
-1)Viewing from Desktop
+1)Sign Up Page
 
-![App Screenshots](screenshots/)
+![App Screenshots](screenshots/Sign Up Page.png)
 
 
-2)Viewing from Mobile device
+2)Login Page
 
-![App Screenshots](screenshots/)
+![App Screenshots](screenshots/Login Page.png)
+
+
+3)Chat Page1
+
+![App Screenshots](screenshots/Login Page.png)
+
+
+4)Chat Page2
+
+![App Screenshots](screenshots/Login Page.png)
+
+
+4)Profile Update Page
+
+![App Screenshots](screenshots/profile_update_page.png)
 
 
 ## License

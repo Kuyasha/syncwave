@@ -45,6 +45,11 @@ Messages are synced instantly across devices using Firestore’s real-time datab
 Implemented user presence using a lastSeen timestamp. I have updated the user's lastSeen field in Firestore using their authenticated(auth.chatUser) at every 60 secs. This way I can check if a user was active recently(within last 70secs) to determine if the user is online. If the user's lastSeen is older than that , I consider the user is offline.This approach works well for basic presence tracking without needing firebase realtime database.
 
 
+- Profile Update :
+I have also added a profile update page where users can add/update their name, avatar and bio after being logged in .
+  
+
+
 - Responsive UI/UX:
 Built using CSS Flexbox/Grid and media queries to support all screen sizes.
 user avatars, and timestamps for better usability.

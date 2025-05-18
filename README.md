@@ -38,7 +38,7 @@ Implemented user authentication(login and logout) using Firebase Auth. Firebase 
 
 
 - Real-Time Messaging :
-Messages are synced instantly across devices using Firestore’s real-time database. For instant update across users I have used Firestore's onSnapshot. Also messages are fetched in reverse order so that the newest messages appear at the bottom.
+Messages are synced instantly across devices using Firestore’s real-time database. For instant update across users I have used Firestore's onSnapshot. Also messages are fetched in reverse order so that the newest messages appear at the bottom. For unseen messages, the profile image of sender is bordered and the last unseen message is highlighted.
 
 
 - User Status and Presence :

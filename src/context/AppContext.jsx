@@ -11,6 +11,7 @@ const AppContextProvider = (props) =>{
     const navigate = useNavigate();
     const [userData, setUserData] = useState(null);
     const [chatData, setChatData] = useState(null);
+    
     //these are created for all the components to get access
     const [messagesId, setMessagesId] = useState(null);
     const [messages, setMessages] = useState([]);
@@ -80,6 +81,8 @@ const AppContextProvider = (props) =>{
     },[userData]);
 
 
+
+    
     const value= {
         userData, setUserData, chatData, setChatData,
         loadUserData,

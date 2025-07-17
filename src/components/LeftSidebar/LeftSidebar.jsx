@@ -59,12 +59,12 @@ const LeftSidebar = () => {
     //user will be updated with new entries. And inside "messages" collection
     //empty messages array with createAt() property is created)
     const addChat = async () => {
+        //PART-1
         //messages collection is created
         const messagesRef = collection(db, "messages");
         const chatsRef = collection(db, "chats");
         try {
             const newMessageRef = doc(messagesRef);
-
             await setDoc(newMessageRef, {
                 createAt: serverTimestamp(),
                 messages: []
@@ -72,7 +72,8 @@ const LeftSidebar = () => {
 
             //console.log(user.name);  //searched user
             //console.log(userData.name); //loggedIn user
-            //Updating another user's(searched user) chatsData
+
+            //Updating chatsData of another user(searched user)
             await updateDoc(doc(chatsRef, user.id), {  
                 //creating new entry at chatsData
                 chatsData: arrayUnion({
@@ -83,7 +84,7 @@ const LeftSidebar = () => {
                     messageSeen: true //bydefault true
                 })
             });
-            //Updating chatsData of the user who is logged In
+            //Updating chatsData of loggedIn user 
             await updateDoc(doc(chatsRef, userData.id), {
                 //creating new entry at chatsData
                 chatsData: arrayUnion({
@@ -95,7 +96,8 @@ const LeftSidebar = () => {
                 })
             });
             
-
+            
+            // PART-2
             //When we searched for any user and click on that user,
             //that user will be added in the chat-list,and it will also open the chatBox
             const uSnap = await getDoc(doc(db,"users", user.id));

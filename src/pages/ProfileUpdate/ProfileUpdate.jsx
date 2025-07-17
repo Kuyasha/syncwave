@@ -14,14 +14,17 @@ const ProfileUpdate = () =>{
     const [image, setImage] = useState(false);
     const [name, setName] = useState("");
     const [bio, setBio] = useState("");
+    
     const [uid, setUid] = useState("");
     const [prevImage, setPrevImage] = useState("");
     const navigate = useNavigate();
+
+    //Getting from Context
     const {setUserData} = useContext(AppContext);
 
 
 
-    //1)PROFILE UPDATE FN (onSubmitHandler fn for the form)
+    //1)onSubmitHandler fn for the Profile Update form)
     const profileUpdate = async(event) => {
         event.preventDefault();
         try{
@@ -45,6 +48,7 @@ const ProfileUpdate = () =>{
                     name: name
                 })
             }
+
             //sending setUserData to Context
             const snap = await getDoc(docRef);
             setUserData(snap.data());

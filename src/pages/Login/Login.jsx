@@ -9,7 +9,7 @@ const Login = () =>{
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState(""); 
 
-    //On Submit Hnadler fn
+    //On Submit Handler fn
     const onSubmitHandler = (event) =>{
         event.preventDefault();
         if(currState === 'Sign Up'){

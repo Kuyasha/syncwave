@@ -112,6 +112,8 @@ const ChatBox = () =>{
 
 
     //4)For messages to load on the chatbox
+    //Here we are taking realtime update of messages from 'messages' collection
+    //using Firebase listeners onSnapshot fn 
     useEffect(()=>{
         if(messagesId){
             const unSub = onSnapshot(doc(db, "messages", messagesId), (res)=>{
@@ -128,7 +130,8 @@ const ChatBox = () =>{
     
     
 
-
+    //If chatUser is available(means if we click on any chat) then only chatBox
+    //section will be visible, else chat-welcome is shown 
     return chatUser ? 
     (
         <div className = {`chat-box ${chatVisible?"":"hidden"}`}>
@@ -141,7 +144,6 @@ const ChatBox = () =>{
                 <img src={assets.help_icon} className='help' alt="" />
                 <img onClick={()=>setChatVisible(false)} src={assets.arrow_icon} className='arrow' alt="" />
             </div>
-
 
             {/* MIDDLE SECTION => CHAT MSG OF CHAT BOX */}
             <div className='chat-msg'> 
@@ -161,7 +163,6 @@ const ChatBox = () =>{
                 ))} 
             </div> 
 
-
             {/* FOOTER of CHAT BOX */}
             <div className='chat-input'>
                 <input onChange={(e)=>setInput(e.target.value)} value={input} type="text" placeholder='Send a message'/>
@@ -173,7 +174,9 @@ const ChatBox = () =>{
             </div>
         </div>
     )
+
     :
+    //Chat-Welcome section when chatUser not available
     <div className={`chat-welcome ${chatVisible?"":"hidden"}`}>
         <img src={assets.logo_icon} alt ="" />
         <p>Chat anytime, anywhere</p>

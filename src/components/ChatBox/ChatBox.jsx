@@ -18,7 +18,6 @@ const ChatBox = () =>{
     const sendMessage = async()=>{
         try{
             if(input && messagesId){
-
                 await updateDoc(doc(db, 'messages', messagesId), {
                     messages: arrayUnion({
                         sId: userData.id, //user who loggedIn or sending the msg

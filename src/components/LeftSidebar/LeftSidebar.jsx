@@ -25,10 +25,12 @@ const LeftSidebar = () => {
                 const q = query(userRef, where("username", "==", input.toLowerCase())); //where username from users collection matches input field
                 const querySnap = await getDocs(q); //fetch the document related to this query
                 
+                //If querySnap is not empty & id is not of the loggedIn user
                 if (!querySnap.empty && querySnap.docs[0].data().id !== userData.id) //if querySnap is not empty & id is not of the same user who is logged in
                 {
                     //console.log(querySnap.docs[0].data());
                     let userExist = false;
+                    //checking if user already available at chatList
                     chatData.map((user) => {//if user = searching user,then userExist=true
                         if (user.rId === querySnap.docs[0].data().id) {
                             userExist = true;
@@ -73,6 +75,7 @@ const LeftSidebar = () => {
             //console.log(user.name);  //searched user
             //console.log(userData.name); //loggedIn user
 
+            //UPDATE CHATSDATA OF BOTH THE USER
             //Updating chatsData of another user(searched user)
             await updateDoc(doc(chatsRef, user.id), {  
                 //creating new entry at chatsData
@@ -99,10 +102,11 @@ const LeftSidebar = () => {
             
             // PART-2
             //When we searched for any user and click on that user,
-            //that user will be added in the chat-list,and it will also open the chatBox
+            //that user will be added in the chat-list.
             const uSnap = await getDoc(doc(db,"users", user.id));
             const uData = uSnap.data();
-            //setChat() fn is called here
+
+            //setChat() fn => sets the chat messages on the chatBox
             setChat({
                 messagesId: newMessageRef.id,
                 lastMessage: "",
@@ -125,7 +129,9 @@ const LeftSidebar = () => {
     //3)TO SET CHAT INFORMATION AT CHATBOX
     const setChat = async (item) => {
         try {
-            //console.log(item); //when we click on any item at chat-list of leftSidebar
+            //console.log(item);
+            //when we click on any item at chat-list of leftSidebar,
+            //all the chats are shown at chatBox
             setMessagesId(item.messageId);
             setChatUser(item);
 
@@ -193,7 +199,7 @@ const LeftSidebar = () => {
                         <p>{user.name}</p>
                     </div>
                     :
-                    chatData.map((item, index) => (                                        //to boldering the unseen messages
+                    chatData.map((item, index) => (//to boldering the unseen messages
                         <div onClick={() => setChat(item)} key={index} className={`friends ${item.messageSeen || item.messageId === messagesId ? "" : "border"}`}>
                             <img src={item.userData.avatar ? item.userData.avatar : assets.avatar_icon} alt="" />
                             <div>

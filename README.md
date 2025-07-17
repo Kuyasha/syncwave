@@ -45,6 +45,11 @@ Messages are synced instantly across devices using Firestore’s real-time datab
 Implemented user presence using a lastSeen timestamp. I have updated the user's lastSeen field in Firestore using their authenticated(auth.chatUser) at every 60 secs. This way I can check if a user was active recently(within last 70secs) to determine if the user is online. If the user's lastSeen is older than that , I consider the user is offline.This approach works well for basic presence tracking without needing firebase realtime database.
 
 
+- Profile Update :
+I have also added a profile update page where users can add/update their name, avatar and bio after being logged in .
+  
+
+
 - Responsive UI/UX:
 Built using CSS Flexbox/Grid and media queries to support all screen sizes.
 user avatars, and timestamps for better usability.
@@ -61,6 +66,35 @@ Deployed on Firebase Hosting or Vercel with fast load times and free SSL.
 
 
 
+## Screenshots
+
+1)Sign Up Page
+
+![App Screenshots](screenshots/signup.png)
+
+
+2)Login Page
+
+![App Screenshots](screenshots/login.png)
+
+
+3)Chat Page1
+
+![App Screenshots](screenshots/chat_1.png)
+
+
+4)Chat Page2
+
+![App Screenshots](screenshots/chat2.png)
+
+
+4)Profile Update Page
+
+![App Screenshots](screenshots/profile_update_page.png)
+
+
+
+
 ---
 ## Project Outcome & Learning:
 
@@ -70,34 +104,7 @@ I also gained valuable practice in responsive design, authentication logic, and 
 
 
 
-
-## Screenshots
-
-1)Sign Up Page
-
-![App Screenshots](screenshots/Sign Up Page.png)
-
-
-2)Login Page
-
-![App Screenshots](screenshots/Login Page.png)
-
-
-3)Chat Page1
-
-![App Screenshots](screenshots/Login Page.png)
-
-
-4)Chat Page2
-
-![App Screenshots](screenshots/Login Page.png)
-
-
-4)Profile Update Page
-
-![App Screenshots](screenshots/profile_update_page.png)
-
-
+---
 ## License
 This project is open-source and available under the MIT License.
 
